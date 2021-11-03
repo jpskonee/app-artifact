@@ -1,36 +1,10 @@
 import React, { useState } from "react";
 import { Container, Grid, IconButton } from "@material-ui/core";
-import {
-  FaTwitter,
-  FaArrowCircleLeft,
-  FaArrowCircleRight,
-  FaInstagram,
-} from "react-icons/fa";
+import { FaTwitter, FaInstagram } from "react-icons/fa";
 import ReactTypingEffect from "react-typing-effect";
 import VideoModal from "../shared/VideoModal";
 
 const HeroSection = () => {
-  const [img, setImg] = useState(2);
-  const [modal] = useState(false);
-
-  const handleClick = (dir, index) => {
-    if (dir === "next") {
-      if (index < 4) {
-        setImg(img + 1);
-      } else {
-        setImg(1);
-      }
-    } else if (dir === "prev") {
-      if (index > 1) {
-        setImg(img - 1);
-      } else {
-        setImg(4);
-      }
-    }
-    if (img === "4") {
-      // setModal(true);
-    }
-  };
   return (
     <div>
       <Container style={{ padding: "0" }} maxWidth="lg">
@@ -100,41 +74,10 @@ const HeroSection = () => {
             </div>
           </Grid>
           <Grid item md={6} xs={12} className="hero-box">
-            <IconButton
-              onClick={() => {
-                handleClick("prev", img);
-              }}
-            >
-              <FaArrowCircleLeft
-                className="each-icon"
-                style={{ fontSize: "1.8rem", color: "white" }}
-              />
-            </IconButton>
-            <img
-              onClick={(HandleModalOpen) => {
-                // setModal(!modal);
-              }}
-              alt="Hero-brick"
-              src={`/images/header/${img}.png`}
-            />
-            <IconButton
-              onClick={() => {
-                handleClick("next", img);
-              }}
-            >
-              <FaArrowCircleRight
-                className="each-icon"
-                style={{ fontSize: "1.8rem", color: "white" }}
-              />
-            </IconButton>
+            <img alt="Hero-brick" src={`/images/header/nft-clean.png`} />
           </Grid>
         </Grid>
       </Container>
-      {modal && (
-        <div>
-          <VideoModal />
-        </div>
-      )}
     </div>
   );
 };

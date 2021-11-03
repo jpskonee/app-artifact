@@ -8,7 +8,6 @@ function App() {
     <BrowserRouter className="App">
       <Switch>
         <Route exact path="/" component={Index} />
-        {/* <Route path="/splash" component={SplashModal} /> */}
       </Switch>
     </BrowserRouter>
   );

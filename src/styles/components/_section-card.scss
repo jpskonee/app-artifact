@@ -3,13 +3,12 @@
   margin: 0rem 0 0rem 0.5rem;
   color: white;
 
-  @media screen and (max-width: 1050px) {
-  }
   .selection-btn {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin: 1rem auto;
+    padding-left: 0.5rem;
 
     @media screen and (max-width: 1050px) {
       margin: 0;
@@ -17,7 +16,7 @@
 
     span {
       font-weight: bold;
-      margin-right: 1rem;
+      margin-right: 0.5rem;
       color: wheat;
     }
   }
@@ -59,7 +58,7 @@
     font-size: 1rem;
     color: lightgray;
     text-align: left;
-    padding: 0.7rem;
+    padding: 0.4rem;
 
     @media screen and (max-width: 1050px) {
       font-size: 0.9rem;
@@ -70,8 +69,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 2rem;
-    padding: 1rem;
+    font-size: 1.5rem;
+    padding: 0.8rem;
     border: 1px rgb(228, 216, 216) groove;
     border-left: none;
     border-right: none;

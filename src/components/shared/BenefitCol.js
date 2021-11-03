@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Grid } from "@material-ui/core";
 import OfflineBoltIcon from "@material-ui/icons/OfflineBolt";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function BenefitCol() {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
   return (
     <div className="benefit-root">
       <Grid className="first-div" container>
         <Grid className="img-part" item sm={6} xs={12}>
-          <img src="/images/nft-sky.png" alt="artifact-sky" />
+          <div data-aos="fade-right">
+            <img src="/images/nft-sky.png" alt="artifact-sky" />
+          </div>
         </Grid>
         <Grid className="text-part" item sm={6} xs={12}>
           We know that NFTs are the future for art project marketing, business
@@ -67,7 +74,9 @@ function BenefitCol() {
           when your QR code on the back of your device is scanned.
         </Grid>
         <Grid className="img-part" item sm={6} xs={12}>
-          <img src="/images/nft-clean.png" alt="artifact-sky" />
+          <div data-aos="fade-left">
+            <img src="/images/nft-clean.png" alt="artifact-sky" />
+          </div>
         </Grid>
       </Grid>
     </div>

@@ -1,15 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Container, Grid } from "@material-ui/core";
 import TeamCard from "../shared/TeamCard";
 import FaqSection from "../shared/FaqSection";
 import DoubleHeader from "../shared/DoubleHeader";
 import Footer from "../shared/Footer";
 import HeroSection from "../shared/HeroSection";
+import Dapp from "../shared/Dapp";
+import BlogPost from "../shared/blog/BlogPost";
+import RoadMapRoot from "../shared/roadmap/RoadMapRoot";
+import RoadMapMobile from "../shared/roadmap/RoadMapMobile";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import BenefitCol from "../shared/BenefitCol";
-import RoadMap from "../shared/RoadMap";
-import TestDapp from "../shared/TestDapp";
 
 export default function Index() {
   useEffect(() => {
@@ -30,119 +31,44 @@ export default function Index() {
           />
         </div>
 
-        <div>
+        <div data-aos="flip-left">
           {/* <img
             width="100%"
             alt="artifact-membership"
             src="/images/DeviceMemberships.gif"
           /> */}
-          <TestDapp />
+          <Dapp />
         </div>
       </Container>
 
-      <Container maxWidth="lg">
-        <div className="getItAll-div">
-          <DoubleHeader
-            slogan="Get it All"
-            text="Physical | Digital NFT"
-            colorH="#2081E2"
+      <Container style={{ marginTop: "7rem" }} maxWidth="lg">
+        <DoubleHeader
+          slogan="Trending Topics.. "
+          text="Recent Posts"
+          colorH="#2081E2"
+        />
+        <div data-aos="slide-left" className="blog-div">
+          <BlogPost
+            img="blog1.jpg"
+            title="Artifact Marketplace — Profiles for your NFT Accessory"
+            post="Introducing the Artifact Marketplace. The world’s newest, most exciting online platform where artists and collectors can show off their collections. Gain access with your membership pass, show the"
+            link="https://medium.com/@ArtifactNFT/artifact-marketplace-profiles-for-your-nft-accessory-321398c16361"
           />
-
-          <BenefitCol />
+          <BlogPost
+            img="blog2.jpg"
+            title="Introducing the worlds first physical NFT Keychain"
+            post="Introducing the Artifact Keychain, the world’s first NFT keychain & the perfect way to display your NFT’s. When I bought my first NFT I immediately wanted a way to show off my new art with the world while also being fashionable. "
+            link="https://medium.com/@ArtifactNFT/introducing-the-worlds-first-physical-nft-keychain-66690cdebc74"
+          />
+          <BlogPost
+            img="blog3.jpg"
+            title="Bridging NFT’s to physical assets"
+            post="NFTs (non-fungible tokens) are undoubtedly the most popular blockchain products of 2021. These unique tokens present a more decentralized way for creators to share their art with fans and collectors."
+            link="https://medium.com/@ArtifactNFT/bridging-nfts-to-physical-assets-e77051d064af"
+          />
         </div>
       </Container>
-      {/* <Container id="shop-div" maxWidth="lg">
-        <div id="shop-div-1">
-          <div data-aos="fade-right">
-            <HeaderText text="Trait Rarity " color="white" align="left" />
-          </div>
-          <div data-aos="fade-right" className="color-tag-div">
-            <ColourTag
-              text="Satoshi’s Favour"
-              textColor="white"
-              percent="64%"
-              percentColor="#2AC4FF"
-              color1="#003A35"
-              color2="#083041"
-            />
-            <ColourTag
-              text="Vitalik’s Whims"
-              textColor="white"
-              percent="20%"
-              percentColor="#00FFBD"
-              color1="#222241"
-              color2="#063537"
-            />
-            <ColourTag
-              text="Anatoly’s Blessings"
-              textColor="white"
-              percent="10%"
-              percentColor="#9C8EFF"
-              color1="#0E3B57"
-              color2="#223159"
-            />
-            <ColourTag
-              text="Trabucco’s Boons"
-              textColor="white"
-              percent="5%"
-              percentColor="#E740BB"
-              color1="#302A57"
-              color2="#4A1D4B"
-            />
-            <ColourTag
-              text="SBF’s Fortunes"
-              textColor="white"
-              percent="1%"
-              percentColor="#FFCB45"
-              color1="#331836"
-              color2="#332E20"
-            />
-          </div>
-          <div data-aos="fade-right" className="stand-descp">
-            In his quest to bake the ultimate fortune cookie, Soltar tried a lot
-            of different ingredients for a lot of different recipes, with
-            ingredients that were usually offered to ancient crypto deities.
-            Some ingredients were easier to come by, but he grew more desperate
-            by the day, trying even more desperate combinations. Realizing that
-            the scarcer the ingredient, the more powerful it would be, and
-            wanting to make some sense of the arcane knowledge granted to him by
-            the ledger, Soltar ordered the 4 chefs to categorize every
-            ingredient by their rarity.
-            <br />
-            <br />
-            Everyone is lucky, but some have been blessed with more fortune than
-            others, only the luckiest will obtain the best fortune
-            <br />
-            <br />
-            There are 150+ total ingredients in the ledger An’alos and these
-            were sorted into categories by the chefs. These categories were
-            ranked by the power of the deities they were offered to from
-            ‘Satoshi’s Favours’, which could be found in any ancient market to
-            be presented at Satoshi’s temple, all the way to mythic ‘SBF’s
-            Fortunes. The chance of obtaining every kind of ingredient rarity
-            are listed above. They go from common to mythical.
-          </div>
-          <div className="desp-btn">
-            <ColourBtn
-              text="View Traits"
-              textColor="black"
-              color1="#fe50bf"
-              color2="#ffb75a"
-              width="89%"
-              onClick={() => {
-                handleSplashOpen();
-              }}
-            />
-          </div>
-        </div>
-        <div data-aos="fade-left" id="shop-div-2">
-          <img
-            className="cookie-stand"
-            src="images/Machine_v02.png"
-            alt="Soltars Fortune Machine"
-          />
-        </div>
-      </Container> */}
+
       <Container className="team-faq" maxWidth="lg">
         <DoubleHeader
           slogan="Meet Artifact"
@@ -172,9 +98,9 @@ export default function Index() {
             </div>
             <div data-aos="zoom-in" className="each-team img-right">
               <TeamCard
-                color1="#F77F50"
-                color2="#85AB80"
-                img="/images/team/artifact-team-3.png"
+                color1="#916D4C"
+                color2="#B9C2C6"
+                img="/images/team/artifact-team-5.png"
                 name="@carriejglenn"
                 title="Marketing Expert"
               />
@@ -182,13 +108,22 @@ export default function Index() {
 
             <div data-aos="zoom-in" className="each-team img-right">
               <TeamCard
+                color1="#F77F50"
+                color2="#85AB80"
+                img="/images/team/artifact-team-3.png"
+                name="@TheLoftyMom"
+                title="Brand Awareness"
+              />
+            </div>
+            {/* <div data-aos="zoom-in" className="each-team img-right">
+              <TeamCard
                 color1="#C1A6BF"
                 color2="#599DBA"
                 img="/images/team/artifact-team-4.jpg"
-                name="@jpskonee"
+                name="@agho.dev"
                 title="Developer"
               />
-            </div>
+            </div> */}
           </Grid>
           <Grid data-aos="fade-left" item md={5} xs={12} className="faq-div">
             {/* <HeaderText
@@ -204,12 +139,18 @@ export default function Index() {
 
       <Container className="roadmap-div" maxWidth="lg">
         <DoubleHeader slogan="The Journey" text="Road Map" colorH="#2081E2" />
-        <RoadMap />
+        <div className="web-map">
+          <RoadMapRoot />{" "}
+        </div>
+        <div className="mobile-map">
+          {" "}
+          <RoadMapMobile id="mobile" />{" "}
+        </div>
       </Container>
 
       <Container className="social-btn" maxWidth="lg">
-        <DoubleHeader text="Join this Team!!!" colorH="#2081E2" />
-        <div className="social-links">
+        <DoubleHeader text="Follow our Socials!!!" colorH="#2081E2" />
+        <div data-aos="zoom-out" className="social-links">
           <a
             href="https://twitter.com/ArtifactNFT"
             rel="noreferrer"
@@ -231,8 +172,12 @@ export default function Index() {
           >
             <div className="social-links-icon">Medium</div>
           </a>
-          <a href="/" target="_blank" rel="noreferrer">
-            <div className="social-links-icon">Contact</div>
+          <a
+            href="https://www.instagram.com/artifactnft/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="social-links-icon">Instagram</div>
           </a>
         </div>
       </Container>

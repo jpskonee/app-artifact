@@ -13,7 +13,7 @@ function SelectionCard() {
   };
   const rSize = {
     name: "R type",
-    price: 0.05,
+    price: 0.045,
     amount: 1399,
     size: "2.4inch",
   };
@@ -35,7 +35,7 @@ function SelectionCard() {
     <div className="selection-div">
       <div className="selection-btn">
         <span style={{ color: "#1291db" }}> Sizes:</span>
-        <div style={{ margin: "0 2rem" }}>
+        <div>
           <FormControl component="fieldset">
             <RadioGroup
               value={type}
@@ -43,8 +43,8 @@ function SelectionCard() {
               row
               name="size-type"
             >
-              <FormControlLabel value="x" control={<Radio />} label="X-Type" />
-              <FormControlLabel value="r" control={<Radio />} label="R-Type" />
+              <FormControlLabel value="x" control={<Radio />} label="3.2inch" />
+              <FormControlLabel value="r" control={<Radio />} label="2.4inch" />
             </RadioGroup>
           </FormControl>
         </div>
@@ -74,9 +74,9 @@ function SelectionCard() {
           {size.price}
         </div>
       </div>
-      <div className="selection-footnote">
+      {/* <div className="selection-footnote">
         Get it all at every single click!
-      </div>
+      </div> */}
     </div>
   );
 }
