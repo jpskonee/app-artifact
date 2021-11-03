@@ -10,7 +10,7 @@ const HeroSection = () => {
       <Container style={{ padding: "0" }} maxWidth="lg">
         <div className="top-div">
           <div className="logo-div">
-            <img src="/images/icon.webp" alt="logo" className="logo-img" />
+            <img src="/images/logo-new.PNG" alt="logo" className="logo-img" />
           </div>
           <div className="connect-div">Connect Wallet</div>
         </div>

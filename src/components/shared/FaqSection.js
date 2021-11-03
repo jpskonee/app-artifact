@@ -66,11 +66,9 @@ export default function ControlledAccordions() {
         </AccordionSummary>
         <AccordionDetails className={classes.summary}>
           <Typography>
-            Artifact Keychain is the world's first NFT keychain; just the
-            perfect way to display your NFT's. It comee with NFT casting (JPEG,
-            GIF, MP4); 6 Hours batery life WIFI and bluetooth enabled secured
-            wallet verification; Keychain password protected; Secired link to
-            advertiser's account.
+            Artifact is the worlds first physical keychain accessory that can be
+            purchased through a “mint” process. Specifically used for displaying
+            NFT’s directly from all of your online NFT galleries.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -95,10 +93,10 @@ export default function ControlledAccordions() {
         </AccordionSummary>
         <AccordionDetails className={classes.summary}>
           <Typography>
-            The Artifact Keychain works by connecting the unique user to the
-            Artifact Marketplace via a QR code located on the back of the
-            device, here is where you can create a new profile and connect your
-            crypto wallet to verify your NFT collection.
+            The Artifact connects to your wallets via the Artifact Marketplace,
+            add into your profile which NFT’s youd like to be displayed easily
+            authenticate NFT’s via profile portal and keep your favorite NFT
+            projects on rotation
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -119,14 +117,16 @@ export default function ControlledAccordions() {
           id="panel3bh-header"
           className={classes.heading}
         >
-          <Typography> How to get benefited with Artifact Keychain?</Typography>
+          <Typography> What are the Artifact NFT benefits?</Typography>
         </AccordionSummary>
         <AccordionDetails className={classes.summary}>
           <Typography>
-            You get both the NFT and Physical keychain. We truly believe that
-            the Artifact Marketplace will enable contact with other members in
-            the NFT space not only within the virtual space, but also out in the
-            community and even bring more people in.
+            Artifact NFT’s are redeemable for (1) physical Artifact keychain
+            accessory The NFT also doubles as your membership pass to the
+            Artifact Marketplace where you will have access to your profile to
+            connect all your galleries as well as advertising capabilities.
+            Artifact NFT holders also will be eligible for future mints for the
+            Artifact Technology 2nd collection and beyond
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -147,11 +147,12 @@ export default function ControlledAccordions() {
           id="panel4bh-header"
           className={classes.heading}
         >
-          <Typography>How can I get a Keychain?</Typography>
+          <Typography>When is the drop how much? </Typography>
         </AccordionSummary>
         <AccordionDetails className={classes.summary}>
           <Typography>
-            You can do so by clicking the mint button in our webpage
+            Minting for presale begins November 5 2021 prices are .045 for
+            regular size unit (R type) and .07 for bigger size unit (x type)
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -172,11 +173,12 @@ export default function ControlledAccordions() {
           id="panel5bh-header"
           className={classes.heading}
         >
-          <Typography>When is the drop? How much?</Typography>
+          <Typography>When will i get physical keychain? </Typography>
         </AccordionSummary>
         <AccordionDetails className={classes.summary}>
           <Typography>
-            The date will be announced along with the price very shortly.
+            Shipping begins March 2022 (any delays to be announced via email and
+            social media)
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -198,13 +200,16 @@ export default function ControlledAccordions() {
           id="panel6bh-header"
           className={classes.heading}
         >
-          <Typography>When will i get the Physical Keychain?</Typography>
+          <Typography>Are all the keychains the same?</Typography>
         </AccordionSummary>
         <AccordionDetails className={classes.summary}>
           <Typography>
-            One the Presale is over, We open our portal for everyone to claim
-            the minted keychain delivered to their address. NB. A keychain can
-            only be claimed once.
+            The keychains have the same features in two basic sizes i.e large
+            3.2 inch and small 2.4 inch. Each keychain is connected to a unique
+            NFT which represents the users membership to the Artifact
+            Marketplace where you can create a profile, connect all NFT
+            galleries, advertise new projects and have access to new Artifact
+            drops in the future
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -225,36 +230,13 @@ export default function ControlledAccordions() {
           id="panel7bh-header"
           className={classes.heading}
         >
-          <Typography>Are all the keychains the same?</Typography>
-        </AccordionSummary>
-        <AccordionDetails className={classes.summary}>
-          <Typography>
-            The keychains have the same features in two basic sizes. i.e Large
-            (3.2in) and Small (2.4in)
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion
-        expanded={expanded === "panel8"}
-        onChange={handleChange("panel8")}
-        className={classes.accordion}
-      >
-        <AccordionSummary
-          expandIcon={
-            expanded === "panel8" ? (
-              <RemoveIcon style={{ color: "white" }} />
-            ) : (
-              <AddIcon style={{ color: "white" }} />
-            )
-          }
-          aria-controls="panel8bh-content"
-          id="panel8bh-header"
-          className={classes.heading}
-        >
           <Typography>Will there be a secondary market?</Typography>
         </AccordionSummary>
         <AccordionDetails className={classes.summary}>
-          <Typography>Yes. We’ll publish after the Presale</Typography>
+          <Typography>
+            Yes if the Artifact NFT has not been redeemed holders may trade this
+            NFT on the secondary market
+          </Typography>
         </AccordionDetails>
       </Accordion>
     </div>

@@ -89,10 +89,10 @@ export default function Index() {
             </div>
             <div data-aos="zoom-in" className="each-team">
               <TeamCard
-                color1="#FFCD57"
-                color2="#9D9B9C"
-                img="/images/team/artifact-team-2.png"
-                name="@kongkult21"
+                color1="#FEB3C8"
+                color2="#B60A30"
+                img="/images/team/artifact-team-6.jpg"
+                name="@TheBigMort_eth"
                 title="Senior Advisor"
               />
             </div>
